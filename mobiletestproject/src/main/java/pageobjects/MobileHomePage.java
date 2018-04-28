@@ -5,7 +5,7 @@ import mobiletestproject.utils.Browser;
 public class MobileHomePage {
 	
 	public static void goTo() {
-		Browser.getDriver().get("https://www.mobile.de/");
+		Browser.getDriver().get("https://www.mobile.de/?lang=en");
 	}
 
 
