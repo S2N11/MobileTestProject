@@ -14,17 +14,20 @@ public class Browser {
 
 	public static void initBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\opt\\chromedriver.exe");
+		// System.setProperty("webdriver.gecko.driver", "C:\\opt\\geckodriver.exe");
 
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
 		capabilities.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
 
+		// driver = new FirefoxDriver();
 		driver = new ChromeDriver();
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	}
 
-	public static WebDriver getDriver() {
+	public static WebDriver driver() {
 		return driver;
 	}
 
