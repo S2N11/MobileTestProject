@@ -28,10 +28,10 @@ public class AdminLoginTests {
 		
 		AdminLogin.verifyValidationMessage("The validation message was not present.", "No match for Username and/or Password.");
 	}
-	
-	@After
-	public void tearDown(){
-		Browser.quit();
-	}
+//	
+//	@After
+//	public void tearDown(){
+//		Browser.quit();
+//	}
 
 }

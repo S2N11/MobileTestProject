@@ -14,7 +14,6 @@ public class MobileHomePageTests {
 	@Test
 	public void successfulLogin() throws InterruptedException {
 		MobileHomePage.goTo();
-		Thread.sleep(5000);
 		MobileHomePage.clickLogIn();
 	}
 }

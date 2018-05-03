@@ -27,7 +27,7 @@ public class Browser {
 		driver.manage().window().maximize();
 	}
 
-	public static WebDriver driver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 

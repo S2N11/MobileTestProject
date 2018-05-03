@@ -10,7 +10,7 @@ public class Browser {
 	private static WebDriver driver;
 
 	public static void initBrowser() {
-		System.setProperty("webdriver.chrome.driver", "D:\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\opt\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
@@ -25,3 +25,4 @@ public class Browser {
 	
 	
 }
+
